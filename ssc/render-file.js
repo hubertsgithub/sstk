@@ -16,6 +16,7 @@ cmd
   .option('--assetType <type>', 'Asset type (scene or model)', 'model')
   .option('--output_dir <dir>', 'Base directory for output files', '.')
   .option('--use_ambient_occlusion [flag]', 'Use ambient occlusion or not', STK.util.cmd.parseBoolean, true)
+  .option('--output <output>', 'output name')
   .optionGroups(['config_file', 'render_views', 'color_by'])
   .option('--view_index <view_index>', 'Which view to render [0-7]', STK.util.cmd.parseInt)
   .option('--use_scene_camera <camera_name>', 'Use camera from scene')
